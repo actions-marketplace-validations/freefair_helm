@@ -1,7 +1,7 @@
 name: Freefair Helm Action
 description: Deploys a helm chart
 author: freefair
-icon: box
+icon: anchor
 color: gray-dark
 inputs:
   release:
