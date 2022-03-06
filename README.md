@@ -72,7 +72,7 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: 'Deploy'
-      uses: 'deliverybot/helm@v1'
+      uses: 'freefair/helm@v1'
       with:
         release: 'nginx'
         namespace: 'default'
@@ -113,7 +113,7 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: 'Deploy'
-      uses: 'deliverybot/helm@v1'
+      uses: 'freefair/helm@v1'
       with:
         release: 'nginx'
         track: canary
@@ -145,7 +145,7 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
     - name: 'Deploy'
-      uses: 'deliverybot/helm@v1'
+      uses: 'freefair/helm@v1'
       with:
         # Task remove means to remove the helm release.
         task: 'remove'
