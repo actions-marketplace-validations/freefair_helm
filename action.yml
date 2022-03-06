@@ -1,6 +1,6 @@
-name: Deliverybot Helm Action
+name: Freefair Helm Action
 description: Deploys a helm chart
-author: deliverybot
+author: freefair
 icon: box
 color: gray-dark
 inputs:
@@ -29,6 +29,9 @@ inputs:
     required: false
   helm:
     description: Helm binary to execute, one of [helm, helm3].
+    required: false
+  timeout:
+    description: Helm timeout (e. g. 10m)
     required: false
   token:
     description: Github repository token. If included and the event is a deployment
